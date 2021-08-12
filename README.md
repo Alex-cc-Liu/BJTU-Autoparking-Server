@@ -50,7 +50,7 @@ return: “预测的误差”
 
 访问本端口通过 ip: IP地址:端口号/record/
 
-return: “预测的误差”
+return：无返回值
 
 # Function checkIP
 
