@@ -2,7 +2,17 @@
 
 
 # Requirement:
-Flask, socket, pandas, time, logging, keras, tensorflow
+flask, socket, pandas, time, logging, keras, tensorflow
+
+# directory structure
+
+Working Directory
+├── data
+│   └── log
+│       └── log_info.csv
+├── Server_main.py
+└── user_info.csv
+
 
 
 # Function SignUp
@@ -17,7 +27,7 @@ return: 创建账户失败：'This account has existed!'
 
 # Function LogIn
 
-功能：判断是否登陆成功，并在控制台输出提示。
+功能：判断是否登陆成功，并在控制台输出提示。记录本次登陆到日志文件“data/log/log_info.csv”中
 
 通过 get 请求传递的参数：{"password": , "username": }
 
@@ -39,6 +49,7 @@ return: 账户登陆失败：'0'
 return: “预测的误差”
 
 
+
 # Function record
 
 功能：将列车传回的数据记录到文件中
@@ -52,6 +63,8 @@ return: “预测的误差”
 
 return：无返回值
 
+
+
 # Function checkIP
 
 功能：返回一个特定的字符串以确定列车正确连接服务器
@@ -62,10 +75,11 @@ return：无返回值
 
 return: “LHDL_YYDS_2021”
 
-# getIPAddress(ip)
 
-功能：通过开放API和用户的IP地址确定登陆用户的地理位置
+# Function get_host_ip
 
-传参：用户的登陆IP地址
+功能：获取本机IP地址
 
-return: 地理信息
+本函数只通过本地进行访问
+
+返回值：本机IP地址
