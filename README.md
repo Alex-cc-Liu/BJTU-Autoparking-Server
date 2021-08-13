@@ -8,9 +8,13 @@ flask, socket, pandas, time, logging, keras, tensorflow
 
 Working Directory
 ├── data
+
 │   └── log
+
 │       └── log_info.csv
+
 ├── Server_main.py
+
 └── user_info.csv
 
 
