@@ -7,6 +7,7 @@ flask, socket, pandas, time, logging, keras, tensorflow
 # directory structure
 
 Working Directory
+
 ├── data
 
 │   └── log
